@@ -1,0 +1,163 @@
+* { padding: 0; margin: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; height: 100vh; }
+
+header {
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 85% 85% / 30%;
+    animation: slideBackground 15s ease-in-out infinite;
+}
+
+@keyframes slideBackground {
+    0% {
+        background-image: url('images/1.png');
+    }
+    12.5% {
+        background-image: url('images/2.jpeg');
+    }
+    25% {
+        background-image: url('images/3.jpeg');
+    }
+    37.5% {
+        background-image: url('images/4.jpg');
+    }
+    50% {
+        background-image: url('images/5.jpeg');
+    }
+    62.5% {
+        background-image: url('images/6.webp');
+    }
+    75% {
+        background-image: url('images/7.jpg');
+    }
+    87.5% {
+        background-image: url('images/8.jpeg');
+    }
+    100% {
+        background-image: url('images/9.jpeg');
+    }
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    margin-bottom: 30px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: text-decoration 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3, h4 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+b {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #0cd6138e;
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+footer h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+footer button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+footer button:hover {
+    background-color: #45a049;
+}
+
+footer p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+footer .cta {
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 50px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    footer h1 {
+        font-size: 36px;
+    }
+
+    footer h2 {
+        font-size: 24px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}

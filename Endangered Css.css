@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2e3b4e;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.section-title {
+    font-size: 1.5em;
+    color: #2e6d7e;
+    margin-top: 20px;
+}
+
+.content {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.imgslider {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    background-image: url('Markhor/1.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    animation: ChangeImageMarkhor 20s linear infinite;
+}
+
+@keyframes ChangeImageMarkhor {
+    0% {
+        background-image: url('Markhor/1.jpg');
+    }
+    25% {
+        background-image: url('Markhor/2.jpeg');
+    }
+    50% {
+        background-image: url('Markhor/3.jpeg');
+    }
+    75% {
+        background-image: url('Markhor/4.jpeg');
+    }
+    100% {
+        background-image: url('Markhor/1.jpg');
+    }
+}
+
+.imgslider-snow {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    background-image: url('SnowLeoperd/1.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    animation: ChangeImageSnow 20s linear infinite;
+}
+
+@keyframes ChangeImageSnow {
+    0% {
+        background-image: url('SnowLeoperd/1.jpg');
+    }
+    25% {
+        background-image: url('SnowLeoperd/2.webp');
+    }
+    50% {
+        background-image: url('SnowLeoperd/3.jpeg');
+    }
+    75% {
+        background-image: url('SnowLeoperd/4.jpeg');
+    }
+    100% {
+        background-image: url('SnowLeoperd/1.jpg');
+    }
+}

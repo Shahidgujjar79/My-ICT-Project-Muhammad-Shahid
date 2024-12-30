@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - Endangered Species</title>
+    <link rel="stylesheet" href="joinus.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Join Us - Save Endangered Species</h2>
+
+       
+        <div id="toggle-options">
+            <div class="toggle-btn" onclick="showLogin()">Login</div>
+            <div class="toggle-btn" onclick="showSignUp()">Sign Up</div>
+        </div>
+
+        
+        <div id="login-form" style="display: none;">
+            <h3>Login</h3>
+            <form>
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="login-username" required placeholder="Enter your username">
+
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password" required placeholder="Enter your password">
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        
+        <div id="signup-form" style="display: none;">
+            <h3>Sign Up</h3>
+            <form>
+                <label for="signup-username">Username:</label>
+                <input type="text" id="signup-username" name="signup-username" required placeholder="Choose a username">
+
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="signup-password" required placeholder="Choose a password">
+
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="signup-email" required placeholder="Enter your email">
+
+                <label for="signup-phone">Phone Number:</label>
+                <input type="text" id="signup-phone" name="signup-phone" required placeholder="Enter your phone number">
+
+                <label for="signup-message">Why do you want to join?</label>
+                <textarea id="signup-message" name="signup-message" rows="4" placeholder="Let us know why you want to be a part of our mission"></textarea>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function showLogin() {
+            document.getElementById("login-form").style.display = "block";
+            document.getElementById("signup-form").style.display = "none";
+        }
+
+        function showSignUp() {
+            document.getElementById("signup-form").style.display = "block";
+            document.getElementById("login-form").style.display = "none";
+        }
+    </script>
+</body>
+</html>

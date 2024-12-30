@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: text-decoration 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.hero {
+    background: url('endangered-animals.jpg') no-repeat center center/cover;
+    height: 300px;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.content {
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.imgslider {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    background-image: url('images/1.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    animation: ChangeImage 20s linear  infinite alternate-reverse ;
+}
+
+@keyframes ChangeImage {
+    0% {
+        background-image: url('images/1.jpg');
+    }
+    12% {
+        background-image: url('images/2.jpeg');
+    }
+    24% {
+        background-image: url('images/3.jpeg');
+    }
+    36% {
+        background-image: url('images/4.jpg');
+    }
+    48% {
+        background-image: url('images/5.jpeg');
+    }
+    60% {
+        background-image: url('images/6.webp');
+    }
+    72% {
+        background-image: url('images/7.jpg');
+    }
+    84% {
+        background-image: url('images/8.jpg');
+    }
+    100% {
+        background-image: url('images/1.jpg');
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #0ade11;
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+button {
+    background-color: #02020229;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
